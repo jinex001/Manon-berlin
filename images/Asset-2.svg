@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64.02 32">
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <g>
+        <rect x="5.19" y="5.19" width="21.63" height="21.63" transform="translate(-6.63 16) rotate(-45)"/>
+        <path d="M16,1.41l14.59,14.59-14.59,14.59L1.41,16,16,1.41M16,0L0,16l16,16,16-16L16,0h0Z"/>
+      </g>
+      <g>
+        <polygon points="32.02 0 32.02 16 48.02 0 32.02 0"/>
+        <polygon points="32.02 32 48.02 32 32.02 16 32.02 32"/>
+        <polygon points="48.02 0 64.02 16 64.02 0 48.02 0"/>
+        <polygon points="64.02 32 64.02 16 48.02 32 64.02 32"/>
+      </g>
+    </g>
+  </g>
+</svg>
