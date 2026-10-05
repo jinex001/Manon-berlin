@@ -1,0 +1,199 @@
+/* Brasserie Manon – Grundstil
+   Bewusst ohne Google Fonts: in Deutschland ist das Einbinden externer
+   Schriften ohne Einwilligung datenschutzrechtlich riskant (DSGVO). */
+
+:root {
+  --cream: #f6f0e4;
+  --paper: #fffaf1;
+  --ink: #2a2622;
+  --muted: #6b6259;
+  --green: #1f3d33;
+  --brass: #b08a3e;
+  --line: #e2d8c5;
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 4.5rem; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  line-height: 1.6;
+}
+
+a { color: var(--green); }
+
+h1, h2, h3, .logo { font-family: var(--serif); font-weight: 500; }
+
+/* Header */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0.9rem 1rem;
+  background: var(--green);
+  color: var(--cream);
+}
+
+.logo {
+  color: var(--cream);
+  text-decoration: none;
+  font-size: 1.3rem;
+  margin-right: auto;
+  letter-spacing: 0.02em;
+}
+.logo span { color: var(--brass); font-style: italic; }
+
+.nav { display: flex; gap: 1.25rem; }
+.nav a {
+  color: var(--cream);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+.nav a:hover { color: var(--brass); }
+
+.lang-toggle {
+  background: none;
+  border: 1px solid var(--brass);
+  color: var(--cream);
+  border-radius: 999px;
+  padding: 0.2rem 0.75rem;
+  font: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+.lang-toggle:hover { background: var(--brass); color: var(--green); }
+
+/* Hero */
+.hero {
+  background: var(--green);
+  color: var(--cream);
+  text-align: center;
+  padding: 6rem 1rem 7rem;
+  border-bottom: 4px solid var(--brass);
+}
+.hero-inner { max-width: 40rem; margin: 0 auto; }
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.8rem;
+  color: var(--brass);
+  margin: 0;
+}
+.hero h1 { font-size: clamp(2.6rem, 8vw, 4.5rem); margin: 0.5rem 0; }
+.lead { font-size: 1.15rem; margin: 0 0 2rem; }
+
+.btn {
+  display: inline-block;
+  background: var(--brass);
+  color: var(--green);
+  padding: 0.75rem 1.75rem;
+  border-radius: 2px;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+.btn:hover { background: var(--cream); }
+
+/* Sections */
+.section {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+}
+.section-alt {
+  max-width: none;
+  background: var(--cream);
+}
+.section-alt > * { max-width: 58rem; margin-left: auto; margin-right: auto; }
+
+.section h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 0 auto 1.5rem;
+}
+.section h2::after {
+  content: "";
+  display: block;
+  width: 3rem;
+  height: 2px;
+  margin: 0.75rem auto 0;
+  background: var(--brass);
+}
+.section > p { text-align: center; }
+
+.note { color: var(--muted); font-style: italic; }
+
+/* Menu */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.menu-col h3 {
+  font-size: 1.3rem;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 0.4rem;
+}
+.menu-list { list-style: none; padding: 0; margin: 0; }
+.menu-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.4rem 0;
+  font-family: var(--serif);
+}
+.price { color: var(--muted); }
+
+/* Hours */
+.hours {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  gap: 0.5rem 2rem;
+  margin: 0;
+}
+.hours dt { font-weight: 600; }
+.hours dd { margin: 0; }
+
+/* Contact */
+.contact {
+  font-style: normal;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem 3rem;
+  text-align: center;
+}
+
+/* Footer */
+.site-footer {
+  background: var(--ink);
+  color: var(--cream);
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+}
+.site-footer p { margin: 0.25rem 0; }
+.site-footer a { color: var(--cream); }
+
+/* Legal pages */
+.legal { max-width: 45rem; margin: 0 auto; padding: 3rem 1rem; }
+.legal h1 { font-size: 2.2rem; }
+
+/* Mobile */
+@media (max-width: 640px) {
+  .site-header { flex-wrap: wrap; gap: 0.5rem 1rem; }
+  .nav { order: 3; width: 100%; justify-content: space-between; gap: 0.5rem; }
+  .nav a { font-size: 0.85rem; }
+  .hero { padding: 4rem 1rem 5rem; }
+}
