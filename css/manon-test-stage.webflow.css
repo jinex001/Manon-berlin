@@ -7251,11 +7251,18 @@
   margin: 40px 20px 120px;
   padding-top: 20px;
   font-family: futura-pt, sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 300;
-  line-height: 19px;
+  line-height: 22px;
 }
 
 .allergen-legend p {
   margin: 0 0 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .allergen-legend {
+    font-size: 12px;
+    line-height: 19px;
+  }
 }
