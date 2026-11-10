@@ -7266,3 +7266,9 @@
     line-height: 19px;
   }
 }
+
+@media screen and (max-width: 479px) {
+  .div-block-152.drinks {
+    grid-template-columns: 1fr;
+  }
+}
