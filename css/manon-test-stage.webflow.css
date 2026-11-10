@@ -7230,3 +7230,32 @@
   font-style: normal;
   font-display: swap;
 }
+
+/* Menu: allergen codes and legend */
+.allergen {
+  color: var(--creamy-w);
+  opacity: .75;
+  letter-spacing: .06em;
+  vertical-align: .4em;
+  white-space: nowrap;
+  margin-left: 5px;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.allergen-legend {
+  border-top: 1px solid var(--cream-yellow);
+  color: var(--creamy-w);
+  opacity: .85;
+  margin: 40px 20px 120px;
+  padding-top: 20px;
+  font-family: futura-pt, sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 19px;
+}
+
+.allergen-legend p {
+  margin: 0 0 8px;
+}
